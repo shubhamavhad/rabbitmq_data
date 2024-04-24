@@ -29,3 +29,15 @@ Uses the iot_data database and the mqtt_messages collection.
 refrences:-
 https://pypi.org/project/paho-mqtt/
 https://pypi.org/project/pymongo/
+
+
+3.unittest cases explanation:-
+Test Case Explanations:
+test_process_message_no_sensor_id:
+Ensures process_message leaves data unchanged when there's no sensor_id.
+test_process_message_sensor_celsius:
+Checks if process_message correctly converts Celsius to Fahrenheit.
+test_process_message_sensor_fahrenheit:
+Verifies process_message does not modify Fahrenheit data.
+test_insert_mqtt_message:
+Tests insert_mqtt_message by checking if it inserts the correct data into the MongoDB collection.
